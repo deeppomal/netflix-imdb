@@ -1,10 +1,11 @@
 import React from 'react'
-import {useGetTop250Movies} from '../hooks/useGetTop250Movies'
+import {TitleListContainer}  from './TitleListContainer';
 const Home = () => {
 
-    const {data} = useGetTop250Movies();
   return (
-    <div>Home</div>
+    <div>
+        <TitleListContainer />
+    </div>
   )
 }
 
