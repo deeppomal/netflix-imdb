@@ -4,7 +4,7 @@ const Home = () => {
 
   return (
     <div>
-        <TitleListContainer />
+      <TitleListContainer title={'Top IMDB Movies'} query={'Top250Movies'} queryName={'top-250-m'} />
     </div>
   )
 }
