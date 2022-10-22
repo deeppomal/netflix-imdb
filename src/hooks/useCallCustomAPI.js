@@ -8,6 +8,10 @@ const fetch = (query)=>{
 export const useCallCustomAPI = (query,queryName) => {
     return useQuery(
         queryName,
-        ()=>fetch(query)
+        ()=>fetch(query),
+        {
+            refetchOnMount:false,
+            refetchOnWindowFocus: false,
+        }
     )
 }
